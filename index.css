@@ -1,0 +1,318 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+  
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+    background-color: rgb(3, 3, 3);
+    border-radius: 0 0 10px 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+   margin-top: 0px;
+   
+   
+  
+}
+nav .links a{
+    margin: 10px;
+    padding: 8px;
+    font-size: 23px;
+    color: rgb(243, 239, 239);
+    
+    
+}
+nav .links a:hover{
+    color:red;
+    border-bottom:2px solid ;
+
+}
+.dark-mode nav .links a:hover{
+    color:red;
+    border-bottom:2px solid ;}
+
+nav .logo {
+    padding: 5px;
+    font-size: x-large;
+    color:rgb(250, 242, 242)
+
+}
+nav .awesom{
+    color: rgb(255, 251, 251);
+    padding: 10px;
+    font-size: 30px;
+
+}
+
+
+
+span{
+    color: red;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.centre{
+    width: 60%;
+
+}
+.centre img{
+    width: 100%;
+    height: auto;
+    display: block;
+   
+    padding-right: 10px;
+    border-radius: 15px ;
+    
+}
+.right{
+    width: 45%;
+    padding: 20px;
+}
+.right h2{
+    color:rgb(255, 0, 0)
+    ;
+    padding: 10px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.right h1{
+    color: rgb(0, 0, 0);
+    font-size: 38px;
+    padding: 10px;
+    font-family: sans-serif;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+.right button{
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    background-color: rgb(6, 6, 6);
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+    border: 2px solid red;
+}
+.right a{
+    padding: 5px;
+    font-size: 20px;
+    border: 2px solid black;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    background-color:red;
+    border-radius: 10px;
+    font-family:sans-serif ;
+}
+.right button:hover{
+    background-color: transparent;
+    color: #222;
+  
+
+}
+.right a:hover{
+     background-color: transparent;
+    color: black;
+
+}
+section{
+    height: 130vh;
+    background:rgb(238, 238, 238)
+    ;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 30px;
+    color:rgb(0, 0, 0);
+}
+
+
+
+section .products{
+    display: grid;
+    grid-template-columns:repeat(4,auto);
+    gap: 15px;
+}
+section .products .watches{
+    margin: 5px;
+    box-shadow: 0 0 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 1s ease-in-out;}
+ section .products .watches {
+    width: 100%;
+    height: fit-content;
+    background:rgb(223, 223, 223);
+    padding: 7px;}
+section img{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+section .products .watches:hover{
+    scale: 1.1;}
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode nav {
+    background-color:rgb(0, 0, 0);
+}
+
+.dark-mode a {
+    color: white;
+}
+.dark-mode
+    .right h1{
+    color: whitesmoke;
+    font-size: 38px;
+    padding: 10px;
+    font-family: sans-serif;
+}
+.buy{
+    color: red;
+    padding: 5px;
+    font-size: 20px;
+}
+.buy button{
+    color: red;
+    padding: 5px ;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #ded7d7;
+    font-size: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.buy button:hover{
+    background-color:lightsteelblue;
+}
+.dark-mode span{
+    color: red;
+}
+
+section h3{
+    color: red;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h5{
+    color:brown;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+}
+.dark-mode h5{
+    color: red;
+}
+h4{
+    font-size: 20px;
+    padding: 5px;
+    color: darkblue;
+}
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .items {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+/* Mobile Responsive Design */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
